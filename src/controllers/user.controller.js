@@ -191,7 +191,7 @@ const refreshAccessToken = asyncHandler(async(req,res)=>{
 
    const decodedToken = jwt.verify(incomingRefreshToken , process.env.REFRESH_TOKEN_SECRET)
 
-   const user = User.findById(decodedToke?._id)
+   const user = User.findById(decodedToken?._id)
 
    if(!user){
     throw new ApiError(401,"Invalid refresh token")
@@ -228,7 +228,7 @@ const changeCurrentPassword = asyncHandler(async(req,res)=>{
     const {oldPassword , newPassword} = req.body;
 
 
-    const user = await User.findById(req.user?.id);
+    const user = await User.findById(req.user?._id);
 
     const isPasswordCorrect = user.isPasswordCorrect(oldPassword);
 
@@ -253,4 +253,25 @@ const getCurrentUser = asyncHandler(async(req,res)=>{
 })
 
 
-export {registerUser,loginUser,logoutUser , refreshAccessToken, changeCurrentPassword,getCurrentUser}
+const updateAccountDetails = asyncHandler(async(req , res)=>{
+
+    const {fullname , email}  = req.body;
+
+    if(!fullname || !email){
+        throw new ApiError(400, "all fields are required...")
+    }
+
+    const user = User.findByIdAndUpdate(req.user?._id,
+        { $set : {
+            fullname,
+            email
+        }},
+        {new: true}
+    ).select("-password")
+
+    return res
+    .status(200)
+    .json( new ApiResponse(200,user,"user details updated successfully"))
+})
+
+export {registerUser,loginUser,logoutUser , refreshAccessToken, changeCurrentPassword, getCurrentUser,updateAccountDetails}

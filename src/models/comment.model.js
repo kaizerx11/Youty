@@ -15,7 +15,7 @@ owner : {
     ref : "User"
 }
 },{
-    timestamps : true
+    timestamps : true 
 })
 
 commentSchema.plugin(mongooseAggregatePaginate)

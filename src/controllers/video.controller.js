@@ -17,3 +17,7 @@ const publishVideo = asyncHandler(async(req , res)=>{
 const getVideoById = asyncHandler((req,res)=>{
     //get video by id
 })
+
+const updateVideo = asyncHandler((req, res)=>{
+    //update video details like title , description and thumbnail
+})

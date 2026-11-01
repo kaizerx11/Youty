@@ -21,3 +21,7 @@ const getVideoById = asyncHandler((req,res)=>{
 const updateVideo = asyncHandler((req, res)=>{
     //update video details like title , description and thumbnail
 })
+
+const deleteVideo = asyncHandler((req , res)=>{
+    //delete video
+})

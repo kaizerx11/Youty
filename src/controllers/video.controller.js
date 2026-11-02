@@ -25,3 +25,7 @@ const updateVideo = asyncHandler((req, res)=>{
 const deleteVideo = asyncHandler((req , res)=>{
     //delete video
 })
+
+const togglePublicStatus = asyncHandler((req, res)=>{
+    //take video id from params and use it to toggle public status
+})

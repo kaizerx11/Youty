@@ -5,3 +5,6 @@ import {ApiError} from "../utils/ApiError"
 import {ApiResonse} from "../utils/ApiResponse"
 import {asyncHandler} from "../utils/asyncHandler"
 
+const createTweet = asyncHandler((req,res)=>{
+    //create tweet
+})

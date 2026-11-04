@@ -8,3 +8,7 @@ import {asyncHandler} from "../utils/asyncHandler"
 const createTweet = asyncHandler((req,res)=>{
     //create tweet
 })
+
+const getUserTweet = asyncHandler((req,res)=>{
+    //get tweet and send to frontend
+})

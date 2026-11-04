@@ -12,3 +12,7 @@ const createTweet = asyncHandler((req,res)=>{
 const getUserTweet = asyncHandler((req,res)=>{
     //get tweet and send to frontend
 })
+
+const updateUserTweet = asyncHandler((req,res)=>{
+    //find user by req.user and update 
+})

@@ -20,3 +20,5 @@ const updateUserTweet = asyncHandler((req,res)=>{
 const deleteTweet = asyncHandler((req,res)=>{
     //delete the particular tweet from database..
 })
+
+export{createTweet,getUserTweet,updateUserTweet,deleteTweet}

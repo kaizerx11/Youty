@@ -16,3 +16,7 @@ const getUserTweet = asyncHandler((req,res)=>{
 const updateUserTweet = asyncHandler((req,res)=>{
     //find user by req.user and update 
 })
+
+const deleteTweet = asyncHandler((req,res)=>{
+    //delete the particular tweet from database..
+})

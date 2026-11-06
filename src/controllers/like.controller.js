@@ -8,3 +8,8 @@ const toggleVideoLike = asyncHandler((req , res)=>{
     const {videoId} = req.params;
     //toggle like on video
 })
+
+const toggleCommentLike = asyncHandler((req , res)=>{
+    const {commentId} = req.params;
+    //toggle comment like..
+})

@@ -13,3 +13,7 @@ const toggleCommentLike = asyncHandler((req , res)=>{
     const {commentId} = req.params;
     //toggle comment like..
 })
+
+const toggleTweetLike = asyncHandler((req , res)=>{
+    //toggle tweet like ..
+})

@@ -17,3 +17,7 @@ const toggleCommentLike = asyncHandler((req , res)=>{
 const toggleTweetLike = asyncHandler((req , res)=>{
     //toggle tweet like ..
 })
+
+const getLikeVideo = asyncHandler((req , res)=>{
+    //get the liked video ..
+})

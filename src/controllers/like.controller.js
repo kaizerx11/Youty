@@ -21,3 +21,5 @@ const toggleTweetLike = asyncHandler((req , res)=>{
 const getLikeVideo = asyncHandler((req , res)=>{
     //get the liked video ..
 })
+
+export{toggleVideoLike,toggleCommentLike,toggleTweetLike,getLikeVideo}

@@ -15,3 +15,7 @@ const getUserPlaylists = asyncHandler((req, res)=>{
 const getPlaylistById = asyncHandler((req ,res)=>{
     //get playlist by playlist id
 })
+
+const addVideoToPlaylist = asyncHandler((req,res)=>{
+    //add video to playlist..
+})

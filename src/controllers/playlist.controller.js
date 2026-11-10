@@ -17,5 +17,5 @@ const getPlaylistById = asyncHandler((req ,res)=>{
 })
 
 const addVideoToPlaylist = asyncHandler((req,res)=>{
-    //add video to playlist..
+    //add video to playlist (how u gonna do it ??)
 })

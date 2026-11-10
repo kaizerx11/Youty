@@ -8,6 +8,10 @@ const createPlaylist = asyncHandler((req , res)=>{
     //create playlist..
 })
 
-const getUserPlaylist = asyncHandler((req, res)=>{
+const getUserPlaylists = asyncHandler((req, res)=>{
     //get user playlist using userid from req.params
+})
+
+const getPlaylistById = asyncHandler((req ,res)=>{
+    //get playlist by playlist id
 })

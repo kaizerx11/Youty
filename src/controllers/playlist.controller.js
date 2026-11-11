@@ -23,3 +23,7 @@ const addVideoToPlaylist = asyncHandler((req,res)=>{
 const removeVideoFromPlaylist = asyncHandler((req,res)=>{
     //remove video from playlist.
 })
+
+const deletePlaylist = asyncHandler((req , res)=>{
+    //delete playlist from database ..
+})

@@ -19,3 +19,7 @@ const getPlaylistById = asyncHandler((req ,res)=>{
 const addVideoToPlaylist = asyncHandler((req,res)=>{
     //add video to playlist (how u gonna do it ??)
 })
+
+const removeVideoFromPlaylist = asyncHandler((req,res)=>{
+    //remove video from playlist.
+})

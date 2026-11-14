@@ -11,6 +11,10 @@ const getVideoComments = asyncHandler(async (req, res) => {
 
 })
 
-const addComment = asyncHandler((req ,res)=.{
+const addComment = asyncHandler((req ,res)=>{
     //add comment in database..
+})
+
+const updateComment = asyncHandler((req,res)=>{
+    //update comment in database..
 })

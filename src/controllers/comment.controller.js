@@ -18,3 +18,7 @@ const addComment = asyncHandler((req ,res)=>{
 const updateComment = asyncHandler((req,res)=>{
     //update comment in database..
 })
+
+const deleteComment = asyncHandler((req ,res )=>{
+    //delete comment from database
+})

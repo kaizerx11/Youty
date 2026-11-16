@@ -22,3 +22,5 @@ const updateComment = asyncHandler((req,res)=>{
 const deleteComment = asyncHandler((req ,res )=>{
     //delete comment from database
 })
+
+export{getVideoComments,addComment,updateComment,deleteComment}
